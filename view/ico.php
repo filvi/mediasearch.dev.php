@@ -21,7 +21,7 @@ if(isset($_REQUEST["q"])){
 <body id="bg-icon"  class="bg-image-icon">
     <div id="content" class="w-100 h-100">
         <div class="d-flex justify-content-between">
-            <a id="logo" class="d-inline-block mxy-90" href="index.html">
+            <a id="logo" class="d-inline-block mxy-90" href="/">
                 <div id="logo">
                     <img src="/assets/img/logo/logo-white.svg?h=29f33aed5b4e9df831af9f6f4e0c3435">
                 </div>
@@ -35,7 +35,7 @@ if(isset($_REQUEST["q"])){
                 <div id="text"
                     class="w-100 d-flex flex-column flex-sm-column flex-md-row align-items-center justify-content-around">
                     <h1 class="text-white oswald fs-main-title- mb-0 text-right">icons for
-                    <input type="text" id="query-icon" class="d-inline-block oswald border-0 py-2 mx-3 mt-3 mt-md-0"
+                    <input type="text" id="query-icon" class="d-inline-block oswald border-0 py-3 mx-3 mt-3 mt-md-0"
                         name="q" value="<?php if(isset($q)){echo $q;} ?>">
                         </h1>
                 </div>

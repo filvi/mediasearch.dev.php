@@ -13,22 +13,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
     <link rel="stylesheet" href="/assets/css/styles.min.css?h=daa7969a3b462b8815bc0b80582a8d71">
 </head>
-<?php
+
+
+<?
 if(isset($_REQUEST["q"])){
     $q = $_REQUEST("q");
 }
 ?>
 <body>
-    <div id="bg-video" class="bg-image-video position-absolute"></div>
+    <div id="bg-vector" class="bg-image-vector position-absolute"></div>
     <div id="content" class="w-100">
         <div class="d-flex justify-content-between">
-            <a id="logo" class="d-inline-block mxy-90" href="index.html">
+            <a id="logo" class="d-inline-block mxy-90" href="/">
                 <div id="logo"><img src="/assets/img/logo/logo-white.svg?h=29f33aed5b4e9df831af9f6f4e0c3435"></div>
             </a><a id="credits" class="d-block mxy-90" href="https://filippovicari.com"><img id="fv-logo" src="/assets/img/fv.svg?h=bb224de3d680905982105f74128e365f"></a></div>
         <div id="flex" class="d-flex align-items-center justify-content-center flex-column query-flex margin-footer">
             <div id="title-query" class="d-flex align-items-center justify-items-center">
                 <div id="text" class="container w-100">
-                    <h1 class="text-white oswald fs-main-title- text-center mb-0">Video for<input type="text" id="query-video" class="d-inline-block oswald border-0 py-3 w-50 ml-4" name="q" value="<?php if(isset($q)){echo $q;} ?>"><span class="ml-4"></span></h1>
+                    <h1 class="text-white oswald fs-main-title- text-center mb-0">vectors for<input type="text" id="query-vector" class="d-inline-block oswald border-0 py-3 w-50 ml-4" name="q" value="<?php if(isset($q)){echo $q;} ?>"><span class="ml-4"></span></h1>
                     <h3 class="roboto text-center text-light-red mt-2">Click the box to search whithin the site<br></h3>
                 </div>
             </div>

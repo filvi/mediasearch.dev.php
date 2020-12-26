@@ -47,25 +47,25 @@ if(isset($_REQUEST["q"])){
             <div class="container mt-2 pb-5">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-3 my-2 d-flex justify-content-center align-items-center">
-                        <a class="d-inline-block" href="/img/<?php if(isset($q)){echo $q;} ?>">
+                        <a class="d-inline-block" href="/image/<?php if(isset($q)){echo $q;} ?>">
                             <img data-bs-hover-animate="pulse" id="box-images" class="w-100 h-100 box-img"
                                 src="/assets/img/boxes/images.svg?h=bfbce78c40aa599c3060ca14b48406f2">
                         </a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3 my-2 d-flex justify-content-center align-items-center">
-                        <a class="d-inline-block" href="/vec/<?php if(isset($q)){echo $q;} ?>">
+                        <a class="d-inline-block" href="/vector/<?php if(isset($q)){echo $q;} ?>">
                             <img data-bs-hover-animate="pulse" id="box-vector" class="w-100 h-100 box-img"
                                 src="/assets/img/boxes/vector.svg?h=323204eb8d24fbda11085467cb5cfb3f">
                         </a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3 my-2 d-flex justify-content-center align-items-center">
-                        <a class="d-inline-block" href="/vid/<?php if(isset($q)){echo $q;} ?>">
+                        <a class="d-inline-block" href="/video/<?php if(isset($q)){echo $q;} ?>">
                             <img data-bs-hover-animate="pulse" id="box-video" class="w-100 h-100 box-img"
                                 src="/assets/img/boxes/video.svg?h=cfc7a0569fc26c6b8bcc4d81034f5084">
                         </a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3 my-2 d-flex justify-content-center align-items-center">
-                        <a class="d-inline-block" href="/ico/<?php if(isset($q)){echo $q;} ?>">
+                        <a class="d-inline-block" href="/icon/<?php if(isset($q)){echo $q;} ?>">
                             <img data-bs-hover-animate="pulse" id="box-icon" class="w-100 h-100 box-img"
                                 src="/assets/img/boxes/icon.svg?h=a88673565b552e2106780d4605f1c06c">
                         </a>

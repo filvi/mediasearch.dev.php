@@ -10,7 +10,7 @@
 }
 
 .bg-image-main {
-    background-image: url(../../assets/img/bg/bg-home.svg?h=55036a6ab8830435d7a8398971295c7b);
+    background-image: url(/assets/img/bg/bg-home.svg?h=55036a6ab8830435d7a8398971295c7b);
 }
 .oswald {
     font-family: Oswald;
@@ -77,8 +77,8 @@
 }
 #query {
     color: var(--mydark);
-    -webkit-box-shadow: 5px 5px 20px 0 rgba(1, 10, 14, 0.87), -5px -5px 10px 0 rgba(105, 177, 207, 0.92);
-    box-shadow: 5px 5px 20px 0 rgba(1, 10, 14, 0.87), -5px -5px 10px 0 #fff;
+    /* -webkit-box-shadow: 5px 5px 20px 0 rgba(1, 10, 14, 0.87), -5px -5px 10px 0 rgba(105, 177, 207, 0.92); */
+    /* box-shadow: 5px 5px 20px 0 rgba(1, 10, 14, 0.87), -5px -5px 10px 0 #fff; */
     background-color: #e2eef2;
 }
 #delete-query {
@@ -177,16 +177,16 @@
     height: 100% !important;
 }
 input {
-    border-radius: 15px;
+    /* border-radius: 5px; */
     box-sizing: border-box;
-    -webkit-box-shadow: 6px 5px 10px 0 rgba(0, 0, 0, 0.35), -5px -5px 10px 0 rgba(255, 255, 255, 0.44);
-    box-shadow: 6px 5px 10px 0 rgba(0, 0, 0, 0.35), -5px -5px 10px 0 rgba(255, 255, 255, 0.22);
+    /* -webkit-box-shadow: 6px 5px 10px 0 rgba(0, 0, 0, 0.35), -5px -5px 10px 0 rgba(255, 255, 255, 0.44); */
+    /* box-shadow: 6px 5px 10px 0 rgba(0, 0, 0, 0.35), -5px -5px 10px 0 rgba(255, 255, 255, 0.22); */
     
 }
 #query:focus,
 input:focus {
-    -webkit-box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.55), inset 5px 5px 10px rgba(0, 0, 0, 0.22);
-    box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.55), inset 5px 5px 10px rgba(0, 0, 0, 0.22);
+    /* -webkit-box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.55), inset 5px 5px 10px rgba(0, 0, 0, 0.22); */
+    /* box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.55), inset 5px 5px 10px rgba(0, 0, 0, 0.22); */
 }
 #query-icon:focus {
     background-color: var(--medium-light-yellow);
@@ -394,7 +394,7 @@ input:focus {
     text-shadow: 3px 3px 6px #000;
 }
 .box-img {
-    border-radius: 15px !important;
+    /* border-radius: 5px !important; */
 }
 .bg-image-404,
 .bg-image-main {

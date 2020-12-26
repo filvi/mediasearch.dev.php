@@ -79,6 +79,8 @@ public static function run($basepath = '/'){
         // Do not check other routes
         break;
       }
+
+
     }
   }
 

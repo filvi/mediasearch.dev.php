@@ -6,22 +6,22 @@ switch ($request) {
     
     // homepage
     case '/' :
-        require __DIR__ . '/views/home.php';
+        require __DIR__ . '/view/home.php';
         break;
     case '' :
-        require __DIR__ . '/views/home.php';
+        require __DIR__ . '/view/home.php';
         break;
 
     // query
     case '/q' :
-        require __DIR__ . '/views/query.php';
+        require __DIR__ . '/view/query.php';
         break;
     case '/q/' :
-        require __DIR__ . '/views/query.php';
+        require __DIR__ . '/view/query.php';
         break;
     
     // pagina 404
     default:
-        require __DIR__ . '/views/404.php';
+        require __DIR__ . '/view/404.php';
         break;
 }

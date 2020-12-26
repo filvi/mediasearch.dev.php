@@ -4,11 +4,15 @@
 
 // Include router class
 require __DIR__ . '/models/Route.php';
+Route::add('/',function(){
+    include __DIR__ . "/view/home.php";
+});
 
 // Add base route (startpage)
-Route::add('/',function(){
-    include __DIR__ . "/views/home.php";
+Route::add('/welcome',function(){
+    include __DIR__ . "/view/home.php";
 });
+
 
 // // Simple test route that simulates static html file
 // Route::add('/test.html',function(){
@@ -35,14 +39,14 @@ Route::add('/',function(){
 Route::add('/q/([a-zA-Z%20+]*)',function($q){
     $q = str_replace("%20", " ", $q);
     $q = str_replace("+", " ", $q);
-    include_once __DIR__ . "/views/query.php";
+    include_once __DIR__ . "/view/query.php";
 });
 
 Route::add('/q',function(){
-    include_once __DIR__ . "/views/query.php";
+    include_once __DIR__ . "/view/query.php";
 });
 Route::add('/q/',function(){
-    include_once __DIR__ . "/views/query.php";
+    include_once __DIR__ . "/view/query.php";
 });
 
 
@@ -51,28 +55,28 @@ Route::add('/q/',function(){
 // =======================      ICONS ROUTE       ==============================
 // =============================================================================
 
-Route::add('/ico/([a-zA-Z%20+]*)',function($q){
+Route::add('/icon/([a-zA-Z%20+]*)',function($q){
     $q = str_replace("%20", " ", $q);
     $q = str_replace("+", " ", $q);
-    include_once __DIR__ . "/views/ico.php";
+    include_once __DIR__ . "/view/ico.php";
 });
 
-Route::add('/ico',function(){
-    include_once __DIR__ . "/views/ico.php";
+Route::add('/icon',function(){
+    include_once __DIR__ . "/view/ico.php";
 });
 
 // =============================================================================
 // =======================      IMAGES ROUTE       =============================
 // =============================================================================
 
-Route::add('/img/([a-zA-Z%20+]*)',function($q){
+Route::add('/image/([a-zA-Z%20+]*)',function($q){
     $q = str_replace("%20", " ", $q);
     $q = str_replace("+", " ", $q);
-    include_once __DIR__ . "/views/img.php";
+    include_once __DIR__ . "/view/img.php";
 });
 
-Route::add('/img',function(){
-    include_once __DIR__ . "/views/img.php";
+Route::add('/image',function(){
+    include_once __DIR__ . "/view/img.php";
 });
 
 
@@ -80,14 +84,14 @@ Route::add('/img',function(){
 // =======================      VIDEO ROUTE       ==============================
 // =============================================================================
 
-Route::add('/vid/([a-zA-Z%20+]*)',function($q){
+Route::add('/video/([a-zA-Z%20+]*)',function($q){
     $q = str_replace("%20", " ", $q);
     $q = str_replace("+", " ", $q);
-    include_once __DIR__ . "/views/vid.php";
+    include_once __DIR__ . "/view/vid.php";
 });
 
-Route::add('/vid',function(){
-    include_once __DIR__ . "/views/vid.php";
+Route::add('/video',function(){
+    include_once __DIR__ . "/view/vid.php";
 });
 
 
@@ -95,11 +99,20 @@ Route::add('/vid',function(){
 // =======================      VECTORS ROUTE       ============================
 // =============================================================================
 
+Route::add('/vector/([a-zA-Z%20+]*)',function($q){
+    $q = str_replace("%20", " ", $q);
+    $q = str_replace("+", " ", $q);
+    include_once __DIR__ . "/view/vec.php";
+});
+
+Route::add('/vector',function(){
+    include_once __DIR__ . "/view/vec.php";
+});
 
 
 // Accept only numbers as parameter. Other characters will result in a 404 error
 Route::pathNotFound(function(){
-    include __DIR__ . "/views/404.php";
+    include __DIR__ . "/view/404.php";
 });
 
 Route::run('/');
