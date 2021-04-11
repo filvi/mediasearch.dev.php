@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>MediaSearch.dev</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=06c11f51794665b0497cf2a8aa6e3d12">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
@@ -34,16 +34,15 @@
             </div>
         </div>
         <div class="mxy-90 pb-5">
-            <form action="/controller/q.php" method="GET">
-                <input type="text"  class="d-inline-block oswald border-0 py-3 ml-3 px-3 fs-42" name="q"
-                    placeholder="keyword">
-                <button type="submit" class="text-black btn-yellow d-inline-block text-decoration-none ml-3">
-                    <div class="d-flex align-items-center justify-items-center">
-                        <p class="d-inline-block fs-42 oswald mb-0">TRY IT OUT</p><img class="ml-2 src-icon"
-                            src="assets/img/misc/lens.svg?h=0c4b0fe48981a068969d83ca3dc6f99f">
-                    </div>
-                </button>
-            </form>
+        <form action="/controller/q.php" class="d-inline-block w-auto">
+                    <div class="text-white bg-yellow oswald fs-main-title d-flex align-middle text-center mb-0">
+                        <input type="text" required="required" placeholder="Keyword" id="query" class="d-inline-block oswald py-2 px-4  mb-0 mr-0" name="q" value="<?php if(isset($q)){echo $q;} ?>">
+                        <button type="submit" class=" d-inline-block h-100 query-btn my-auto">
+                            <img src="/assets/img/misc/lens.svg" alt="" srcset="">
+                        </button>
+                        </div>
+                    </form> 
+
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

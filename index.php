@@ -112,6 +112,7 @@ Route::add('/vector',function(){
 
 // Accept only numbers as parameter. Other characters will result in a 404 error
 Route::pathNotFound(function(){
+    header("HTTP/1.0 404 Not Found");
     include __DIR__ . "/view/404.php";
 });
 
