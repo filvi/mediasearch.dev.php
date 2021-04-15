@@ -36,7 +36,7 @@ Route::add('/welcome',function(){
 // =======================      QUERY ROUTE       ==============================
 // =============================================================================
 
-Route::add('/q/([a-zA-Z%20+]*)',function($q){
+Route::add('/q/([0-9a-zA-Z%20+]*)',function($q){
     $q = str_replace("%20", " ", $q);
     $q = str_replace("+", " ", $q);
     include_once __DIR__ . "/view/query.php";
@@ -55,7 +55,7 @@ Route::add('/q/',function(){
 // =======================      ICONS ROUTE       ==============================
 // =============================================================================
 
-Route::add('/icon/([a-zA-Z%20+]*)',function($q){
+Route::add('/icon/([0-9a-zA-Z%20+]*)',function($q){
     $q = str_replace("%20", " ", $q);
     $q = str_replace("+", " ", $q);
     include_once __DIR__ . "/view/ico.php";
@@ -69,7 +69,7 @@ Route::add('/icon',function(){
 // =======================      IMAGES ROUTE       =============================
 // =============================================================================
 
-Route::add('/image/([a-zA-Z%20+]*)',function($q){
+Route::add('/image/([0-9a-zA-Z%20+]*)',function($q){
     $q = str_replace("%20", " ", $q);
     $q = str_replace("+", " ", $q);
     include_once __DIR__ . "/view/img.php";
@@ -84,7 +84,7 @@ Route::add('/image',function(){
 // =======================      VIDEO ROUTE       ==============================
 // =============================================================================
 
-Route::add('/video/([a-zA-Z%20+]*)',function($q){
+Route::add('/video/([0-9a-zA-Z%20+]*)',function($q){
     $q = str_replace("%20", " ", $q);
     $q = str_replace("+", " ", $q);
     include_once __DIR__ . "/view/vid.php";
@@ -99,7 +99,7 @@ Route::add('/video',function(){
 // =======================      VECTORS ROUTE       ============================
 // =============================================================================
 
-Route::add('/vector/([a-zA-Z%20+]*)',function($q){
+Route::add('/vector/([0-9a-zA-Z%20+]*)',function($q){
     $q = str_replace("%20", " ", $q);
     $q = str_replace("+", " ", $q);
     include_once __DIR__ . "/view/vec.php";

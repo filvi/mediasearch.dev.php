@@ -6,13 +6,20 @@ $header = ob_get_clean();
 if(isset($_REQUEST["q"])){
     $q = $_REQUEST("q");
 }
-$header = str_replace("{{title}}", "vector for: $q", $header);
+$header = str_replace("{{title}}", "Vectors for: $q", $header);
 echo $header;
 $choice = "vector";
 ?>
 
-
-<body id="bg-vector" class="bg-image-vector">
+<?php
+if (isset($_REQUEST['ref'])){
+    $bg = "bg-image-banana";
+} else {
+    $bg = "bg-image-vector";
+}
+?>
+<body>
+<div id="bg-vector" class="<?php echo $bg; ?>"></div>
     <div id="content" class="w-100 h-100">
         <div class="d-flex justify-content-between">
             <a id="logo" class="d-inline-block mxy-90" href="/">
@@ -25,13 +32,21 @@ $choice = "vector";
             </a>
         </div>
         <div id="flex" class=" d-flex align-items-center justify-content-center flex-column query-flex margin-footer">
-            <div id="title-query" class=" query-box d-flex align-items-center justify-items-center mx-5  px-5">
+            <div id="title-query" class=" query-box d-flex align-items-center justify-items-center mx-auto">
                 <div
                     class=" my-3 w-100 d-flex flex-column flex-sm-column flex-md-row align-items-center justify-content-around">
-                    <h1 class="text-white oswald fs-main-title- mb-0 text-right">vectors for
+                    <h1 class="text-white oswald fs-main-title mb-0 text-right my-2">Vectors for
                     </h1>
-                    <input type="text" id="query-vector" class="d-inline-block oswald border-0 py-3 mx-3 mt-3 mt-md-0"
-                        name="q" value="<?php if(isset($q)){echo $q;} ?>">
+
+                    <form action="/controller/q.php" class="d-inline-block w-auto mx-2 my-2">
+                    <div class="text-white bg-yellow oswald fs-main-title d-flex align-middle text-center mb-0">
+                        <input type="text" class="d-none" name="fw" value="vec">
+                        <input type="text" id="query-vector" class="d-inline-block w-100 oswald py-2 px-4 w-100 mb-0 mr-0" name="q" value="<?php if(isset($q)){echo $q;} ?>">
+                        <button type="submit" class=" d-inline-block h-100 query-btn my-auto">
+                            <img src="/assets/img/misc/lens.svg" alt="" srcset="">
+                        </button>
+                        </div>
+                    </form> 
                 </div>
             </div>
             <div class="container-fluid mt-4 mb-5">
@@ -69,46 +84,46 @@ $choice = "vector";
                     }
                     ?>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="footer" class="bg-dark-transparent fixed-bottom">
-            <div class="container mb-0 my-2">
-                <div class="row mb-0">
-                    <div class="col-sm-12 col-md-6 my-2 my-md-0 d-flex align-items-center justify-content-sm-center justify-content-md-end"
-                        id="myfooter-text">
-                        <h1 class="text-white oswald text-white mb-0 w-100">Need another asset type?</h1>
-                    </div>
-                    <div class="col-sm-12 col-md-6 align-lg-self-center" id="footer-vector">
-                        <a class="mx-2" href="/image/<?php echo $q; ?>">
-                            <img data-toggle="tooltip" data-bs-tooltip="" class="assets-bottom"
-                                src="/assets/img/assets/images.svg?h=7799906d6e1ff82e95ba4acd18d25a24"
-                                title="Search vector">
-                        </a>
-                        <a class="mx-2" href="/vector/<?php echo $q; ?>">
-                            <img data-toggle="tooltip" data-bs-tooltip="" class="assets-bottom"
-                                src="/assets/img/assets/vector.svg?h=1651652d2d33cc996dd989d7c434eb92"
-                                title="Search vectors">
-                        </a>
-                        <a class="mx-2" href="/video/<?php echo $q; ?>">
-                            <img data-toggle="tooltip" data-bs-tooltip="" class="assets-bottom"
-                                src="/assets/img/assets/video.svg?h=654d72205900eaa083d16e96eb736d49"
-                                title="Search videos">
-                        </a>
-                        <a class="mx-2" href="/icon/<?php echo $q; ?>">
-                            <img data-toggle="tooltip" data-bs-tooltip="" class="assets-bottom"
-                                src="/assets/img/assets/icon.svg?h=52a2637b687f1d24c911a2ffe94897ca"
-                                title="Search icons">
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-        <?php
+    <div id="footer" class="bg-dark-transparent fixed-bottom">
+        <div class="container mb-0 my-2">
+            <div class="row mb-0">
+                <div class="col-sm-12 col-md-6 my-2 my-md-0 d-flex align-items-center justify-content-sm-center justify-content-md-end"
+                    id="myfooter-text">
+                    <h1 class="text-white oswald text-white mb-0 w-100">Need another asset type?</h1>
+                </div>
+                <div class="col-sm-12 col-md-6 align-lg-self-center" id="footer-icons">
+                    <a class="mx-2" href="/image/<?php echo $q; ?>">
+                        <img data-toggle="tooltip" data-bs-tooltip="" class="assets-bottom"
+                            src="/assets/img/assets/images.svg?h=7799906d6e1ff82e95ba4acd18d25a24"
+                            title="Search Images">
+                    </a>
+                    <a class="mx-2" href="/vector/<?php echo $q; ?>">
+                        <img data-toggle="tooltip" data-bs-tooltip="" class="assets-bottom"
+                            src="/assets/img/assets/vector.svg?h=1651652d2d33cc996dd989d7c434eb92"
+                            title="Search vectors">
+                    </a>
+                    <a class="mx-2" href="/video/<?php echo $q; ?>">
+                        <img data-toggle="tooltip" data-bs-tooltip="" class="assets-bottom"
+                            src="/assets/img/assets/video.svg?h=654d72205900eaa083d16e96eb736d49" title="Search videos">
+                    </a>
+                    <a class="mx-2" href="/icon/<?php echo $q; ?>">
+                        <img data-toggle="tooltip" data-bs-tooltip="" class="assets-bottom"
+                            src="/assets/img/assets/icon.svg?h=52a2637b687f1d24c911a2ffe94897ca" title="Search icons">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        
+    </script>
+    <?php
 
 include("./view/partials/footer.php");
 ?>

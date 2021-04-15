@@ -4,7 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>MediaSearch.dev</title>
+    <title>MediaSearch</title>
+    <meta property="og:type" content="website">
+    <meta name="twitter:title" content="MediaSearch :: One query to find them all ">
+    <meta name="og:title" content="MediaSearch :: One query to find them all ">
+    <meta name="twitter:image" itemprop="image"  content="https://www.mediasearch.dev/assets/img/og-squared.png">
+    <meta name="description" content="Tired of typing the same query over and over when you are looking for free hi-res media?
+This might be the solution!">
+    <meta name="og:description" content="Tired of typing the same query over and over when you are looking for free hi-res media?
+This might be the solution!">
+    <meta property="og:url" content="https://www.mediasearch.dev">
+    <meta property="og:image" itemprop="image" content="https://www.mediasearch.dev/assets/img/og-squared.png">
+    <meta property="og:image:secure_url" itemprop="image" content="https://www.mediasearch.dev/assets/img/og-squared.png">
+    <meta name="twitter:description" content="Tired of typing the same query over and over when you are looking for free hi-res media?
+This might be the solution!">
+
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=06c11f51794665b0497cf2a8aa6e3d12">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
@@ -15,8 +29,8 @@
     <link rel="stylesheet" href="assets/css/styles.min.css?h=daa7969a3b462b8815bc0b80582a8d71">
 </head>
 
-<body>
-    <div id="bg-image" class="h-100 w-100 bg-image-main">
+<body class="h-100 w-100 bg-image-main">
+    <div id="bg-image" >
         <div class="d-flex justify-content-between">
             <a href="/">
                 <div id="logo" class="d-inline-block"><img class="mxy-90 ontop"

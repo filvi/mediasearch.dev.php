@@ -20,7 +20,8 @@ if(isset($_REQUEST["q"])){
 }
 ?>
 
-<body id="bg-query">
+<body>
+    <div id="bg-query"></div>
     <div class="d-flex justify-items-between flex-column">
         <div class="d-flex justify-content-between">
             <a id="logo" class="d-inline-block mxy-90" href="/">
@@ -46,28 +47,30 @@ if(isset($_REQUEST["q"])){
                 <!-- <h1 class="light-grey-color oswald text-center my-5 display-3">Choose one</h1> -->
                 </div>
             </div>
-            
             <div class="container mt-5 pb-5">
+                <div class="mb-4">
+                    <h4 class="roboto light-grey-color mb-0 text-center">What kind of assets are you looking for?</h4>
+                </div>
                 <div class="row">
-                    <div class="col-xs-6 col-lg-3 my-2 text-center">
+                    <div class="col-xs-6 col-md-6 my-2 d-flex justify-content-md-end justify-content-center">
                         <a class="d-inline-block" href="/image/<?php if(isset($q)){echo $q;} ?>">
                             <img id="box-images" class="box-img"
                                 src="/assets/img/boxes/images.svg?h=bfbce78c40aa599c3060ca14b48406f2">
                         </a>
                     </div>
-                    <div class="col-xs-6 col-lg-3 my-2 text-center">
+                    <div class="col-xs-6 col-md-6 my-2 d-flex justify-content-md-start justify-content-center">
                         <a class="d-inline-block" href="/vector/<?php if(isset($q)){echo $q;} ?>">
                             <img id="box-vector" class="box-img"
                                 src="/assets/img/boxes/vector.svg?h=323204eb8d24fbda11085467cb5cfb3f">
                         </a>
                     </div>
-                    <div class="col-xs-6 col-lg-3 my-2 text-center">
+                    <div class="col-xs-6 col-md-6 my-2 d-flex justify-content-md-end justify-content-center">
                         <a class="d-inline-block" href="/video/<?php if(isset($q)){echo $q;} ?>">
                             <img id="box-video" class="box-img"
                                 src="/assets/img/boxes/video.svg?h=cfc7a0569fc26c6b8bcc4d81034f5084">
                         </a>
                     </div>
-                    <div class="col-xs-6 col-lg-3 my-2 text-center">
+                    <div class="col-xs-6 col-md-6 my-2 d-flex justify-content-md-start justify-content-center">
                         <a class="d-inline-block" href="/icon/<?php if(isset($q)){echo $q;} ?>">
                             <img id="box-icon" class="box-img"
                                 src="/assets/img/boxes/icon.svg?h=a88673565b552e2106780d4605f1c06c">

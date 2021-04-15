@@ -11,8 +11,15 @@ echo $header;
 $choice = "icon";
 ?>
 
-
-<body id="bg-icon" class="bg-image-icon">
+<?php
+if (isset($_REQUEST['ref'])){
+    $bg = "bg-image-banana";
+} else {
+    $bg = "bg-image-icon";
+}
+?>
+<body>
+<div id="bg-icon" class="<?php echo $bg; ?>"></div>
     <div id="content" class="w-100 h-100">
         <div class="d-flex justify-content-between">
             <a id="logo" class="d-inline-block mxy-90" href="/">
@@ -25,13 +32,21 @@ $choice = "icon";
             </a>
         </div>
         <div id="flex" class=" d-flex align-items-center justify-content-center flex-column query-flex margin-footer">
-            <div id="title-query" class=" query-box d-flex align-items-center justify-items-center mx-5  px-5">
+            <div id="title-query" class=" query-box d-flex align-items-center justify-items-center mx-auto">
                 <div
                     class=" my-3 w-100 d-flex flex-column flex-sm-column flex-md-row align-items-center justify-content-around">
-                    <h1 class="text-white oswald fs-main-title- mb-0 text-right">icons for
+                    <h1 class="text-white oswald fs-main-title mb-0 text-right my-2">icons for
                     </h1>
-                    <input type="text" id="query-icon" class="d-inline-block oswald border-0 py-3 mx-3 mt-3 mt-md-0"
-                        name="q" value="<?php if(isset($q)){echo $q;} ?>">
+
+                    <form action="/controller/q.php" class="d-inline-block w-auto mx-2 my-2">
+                    <div class="text-white bg-yellow oswald fs-main-title d-flex align-middle text-center mb-0">
+                        <input type="text" class="d-none" name="fw" value="ico">
+                        <input type="text" id="query-icon" class="d-inline-block w-100 oswald py-2 px-4 w-100 mb-0 mr-0" name="q" value="<?php if(isset($q)){echo $q;} ?>">
+                        <button type="submit" class=" d-inline-block h-100 query-btn my-auto">
+                            <img src="/assets/img/misc/lens.svg" alt="" srcset="">
+                        </button>
+                        </div>
+                    </form> 
                 </div>
             </div>
             <div class="container-fluid mt-4 mb-5">
