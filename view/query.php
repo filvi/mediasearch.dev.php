@@ -41,7 +41,7 @@ if(isset($_REQUEST["q"])){
             <div id="title-query" class="d-flex align-items-center justify-items-center">
                 <div id="text" class="container w-100 text-center">
                     <form action="/controller/q.php" class="d-inline-block w-auto">
-                        <div class="text-white bg-yellow oswald fs-main-title d-flex align-middle text-center mb-0">
+                        <div class="text-white bg-yellow oswald fs-query d-flex align-middle text-center mb-0">
                             <input type="text" id="query" class="d-inline-block w-100 oswald py-2 px-4 w-100 mb-0 mr-0"
                                 name="q" value="<?php if(isset($q)){echo $q;} ?>">
                             <button type="submit" class=" d-inline-block h-100 query-btn my-auto">

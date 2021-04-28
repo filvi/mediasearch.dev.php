@@ -39,11 +39,11 @@ if (isset($_REQUEST['ref'])){
         <div id="flex" class=" d-flex align-items-center justify-content-center flex-column query-flex margin-footer">
             <div id="title-query" class=" query-box d-flex align-items-center justify-items-center mx-auto">
                 <div class="w-100 d-flex flex-column flex-sm-column flex-md-row align-items-center justify-content-around my-port-3">
-                    <h1 class="text-white oswald fs-main-title mb-0 text-right my-2">Images for
+                    <h1 class="text-white oswald fs-query mb-0 text-right my-2">Images for
                     </h1>
 
                     <form action="/controller/q.php" class="d-inline-block w-auto mx-2 my-2">
-                        <div class="text-white bg-yellow oswald fs-main-title d-flex align-middle text-center mb-0">
+                        <div class="text-white bg-yellow oswald fs-query d-flex align-middle text-center mb-0">
                             <input type="text" class="d-none" name="fw" value="img">
                             <input type="text" id="query-image"
                                 class="d-inline-block w-100 oswald py-2 px-4 w-100 mb-0 mr-0" name="q"

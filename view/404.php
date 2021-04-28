@@ -16,7 +16,7 @@ echo $header;
 src="/assets/img/fv.svg?h=bb224de3d680905982105f74128e365f"></a></div>
 <div id="main-text" class="margin-title mxy-90">
     <div id="main-title">
-        <h1 class="text-white oswald fs-main-title- text-shadow"><strong>This page is not a bug... It’s a
+        <h1 class="text-white oswald fs-main-title text-shadow"><strong>This page is not a bug... It’s a
             404-eature</strong><br></h1>
         </div>
         <div id="main-subtext">
