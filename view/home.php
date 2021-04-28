@@ -26,7 +26,7 @@ This might be the solution!">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css?h=daa7969a3b462b8815bc0b80582a8d71">
+    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
 <body class="h-100 w-100 bg-image-main">
@@ -39,7 +39,7 @@ This might be the solution!">
                     src="assets/img/fv.svg?h=bb224de3d680905982105f74128e365f"></a></div>
         <div id="main-text" class="mxy-90 margin-title ontop">
             <div id="main-title">
-                <h1 class="text-white oswald fs-main-title- text-shadow">finding great Assets should be EASIER<br></h1>
+                <h1 class="text-white oswald fs-main-title text-shadow">finding great Assets should be EASIER<br></h1>
             </div>
             <div id="main-subtext">
                 <p class="roboto light-grey-color fs-28 mb-0 text-shadow w-md-50">Tired of typing the same query over
@@ -49,8 +49,8 @@ This might be the solution!">
         </div>
         <div class="mxy-90 pb-5">
         <form action="/controller/q.php" class="d-inline-block w-auto">
-                    <div class="text-white bg-yellow oswald fs-main-title d-flex align-middle text-center mb-0">
-                        <input type="text" required="required" placeholder="Keyword" id="query" class="d-inline-block oswald py-2 px-4  mb-0 mr-0" name="q" value="<?php if(isset($q)){echo $q;} ?>">
+                    <div class="text-white bg-yellow oswald  d-flex align-middle text-center mb-0">
+                        <input type="text" required="required" placeholder="Keyword" id="query" class="d-inline-block oswald fs-query py-2 px-4  mb-0 mr-0" name="q" value="<?php if(isset($q)){echo $q;} ?>">
                         <button type="submit" class=" d-inline-block h-100 query-btn my-auto">
                             <img src="/assets/img/misc/lens.svg" alt="" srcset="">
                         </button>

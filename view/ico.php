@@ -19,7 +19,13 @@ if (isset($_REQUEST['ref'])){
 }
 ?>
 <body>
-<div id="bg-icon" class="<?php echo $bg; ?>"></div>
+<div id="bg-icon" class="<?php echo $bg; ?>">
+<?php
+    include("assets/img/bg/bg-icons.svg");
+?>
+
+
+</div>
     <div id="content" class="w-100 h-100">
         <div class="d-flex justify-content-between">
             <a id="logo" class="d-inline-block mxy-90" href="/">
@@ -32,9 +38,8 @@ if (isset($_REQUEST['ref'])){
             </a>
         </div>
         <div id="flex" class=" d-flex align-items-center justify-content-center flex-column query-flex margin-footer">
-            <div id="title-query" class=" query-box d-flex align-items-center justify-items-center mx-auto">
-                <div
-                    class=" my-3 w-100 d-flex flex-column flex-sm-column flex-md-row align-items-center justify-content-around">
+            <div id="title-query" class=" query-box d-flex align-items-center justify-items-center mx-auto my-port-3">
+                <div class="w-100 d-flex flex-column flex-sm-column flex-md-row align-items-center justify-content-around">
                     <h1 class="text-white oswald fs-main-title mb-0 text-right my-2">icons for
                     </h1>
 
@@ -51,7 +56,7 @@ if (isset($_REQUEST['ref'])){
             </div>
             <div class="container-fluid mt-4 mb-5">
                 <div class="main-content mb-5">
-                    <div class="row mb-5" id="sitelist">
+                    <div class="row" id="sitelist">
                         <?php
                     include("models/Websites.php");
                     $counter = 0;

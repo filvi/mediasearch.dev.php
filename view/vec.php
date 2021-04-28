@@ -19,7 +19,10 @@ if (isset($_REQUEST['ref'])){
 }
 ?>
 <body>
-<div id="bg-vector" class="<?php echo $bg; ?>"></div>
+<div id="bg-vector" class="<?php echo $bg; ?>">
+<?php
+        include("assets/img/bg/bg-vectors.svg");
+    ?></div>
     <div id="content" class="w-100 h-100">
         <div class="d-flex justify-content-between">
             <a id="logo" class="d-inline-block mxy-90" href="/">
@@ -33,8 +36,7 @@ if (isset($_REQUEST['ref'])){
         </div>
         <div id="flex" class=" d-flex align-items-center justify-content-center flex-column query-flex margin-footer">
             <div id="title-query" class=" query-box d-flex align-items-center justify-items-center mx-auto">
-                <div
-                    class=" my-3 w-100 d-flex flex-column flex-sm-column flex-md-row align-items-center justify-content-around">
+                <div class=" w-100 d-flex flex-column flex-sm-column flex-md-row align-items-center justify-content-around my-port-3">
                     <h1 class="text-white oswald fs-main-title mb-0 text-right my-2">Vectors for
                     </h1>
 

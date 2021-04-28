@@ -20,7 +20,11 @@ if (isset($_REQUEST['ref'])){
 ?>
 
 <body>
-    <div id="bg-video" class="<?php echo $bg; ?>"></div>
+    <div id="bg-video" class="<?php echo $bg; ?>">
+    <?php
+        include("assets/img/bg/bg-video.svg");
+    ?>
+</div>
     <div id="content" class="w-100 h-100">
         <div class="d-flex justify-content-between">
             <a id="logo" class="d-inline-block mxy-90" href="/">
@@ -34,8 +38,7 @@ if (isset($_REQUEST['ref'])){
         </div>
         <div id="flex" class=" d-flex align-items-center justify-content-center flex-column query-flex margin-footer">
             <div id="title-query" class=" query-box d-flex align-items-center justify-items-center mx-auto">
-                <div
-                    class=" my-3 w-100 d-flex flex-column flex-sm-column flex-md-row align-items-center justify-content-around">
+                <div class="w-100 d-flex flex-column flex-sm-column flex-md-row align-items-center justify-content-around my-port-3">
                     <h1 class="text-white d-inline-block oswald fs-main-title mb-0 text-right my-2">videos for</h1>
                     <form action="/controller/q.php?fw=vid" class="d-inline-block w-auto mx-2 my-2">
                         <div class="text-white bg-yellow oswald fs-main-title d-flex align-middle text-center mb-0">
